@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flow assignment 2</title>
+</head>
+<style>
+      form{
+        display: flex;
+        flex-direction: column;
+        width: 10rem;
+    }
+</style>
+<body>
+    <form>
+        <label for="name">Name:
+            <input type="text" id="name" minlength="3" autocomplete="off" required/>
+            <!-- <span class="error">Please enter a valid name</span> -->
+        </label>
+        <label for="email">Email:
+            <input type="email" id ="email" pattern="[a-zA-Z]+@cphbusiness.dk"  placeholder="example@cphbusiness.dk" autocomplete="off" required/>
+            <!-- <span class="error">Please enter a valid email</span> -->
+        </label>
+        <label for="message">Message:
+            <input type="text" id = "message" minlength="8" required/>
+            <!-- <span class="error">Please enter a valid message</span> -->
+        </label>
+  
+        <input type="submit" value="Send" id="button"/>
+
+    </form>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
